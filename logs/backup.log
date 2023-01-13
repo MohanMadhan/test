@@ -1,0 +1,6 @@
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _8cf2ad13c8563520 -p********** _8cf2ad13c8563520 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./test1.com/private/backups/20230113_120035-test1_com-database.sql.gz
+
+Backup Summary for test1.com at 2023-01-13 12:01:00.613441
+Config  : ./test1.com/private/backups/20230113_120035-test1_com-site_config_backup.json 158.0B
+Database: ./test1.com/private/backups/20230113_120035-test1_com-database.sql.gz         1.8MiB
+Backup for Site test1.com has been successfully completed

@@ -1,0 +1,9 @@
+2023-01-13 10:46:51,253 ERROR frappe New Exception collected with id: 2023-01-13 10:46:49.936814-127.0.0.1-de2
+Site: test1.com
+Form Dict: {}
+2023-01-13 10:50:25,187 ERROR frappe New Exception collected with id: 2023-01-13 10:50:25.109591-127.0.0.1-04c
+Site: test1.com
+Form Dict: {}
+2023-01-13 10:50:29,315 ERROR frappe New Exception collected with id: 2023-01-13 10:50:29.280697-127.0.0.1-8bf
+Site: test1.com
+Form Dict: {}

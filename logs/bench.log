@@ -1,0 +1,60 @@
+2023-01-13 10:28:31,355 DEBUG cd /home/eorchids/test/frappe-bench && /usr/bin/virtualenv --quiet env -p python3
+2023-01-13 10:28:34,309 DEBUG cd /home/eorchids/test/frappe-bench && /home/eorchids/test/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-01-13 10:28:38,086 LOG Getting frappe
+2023-01-13 10:28:38,086 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2023-01-13 10:28:44,604 LOG Installing frappe
+2023-01-13 10:28:44,604 DEBUG cd /home/eorchids/test/frappe-bench && /home/eorchids/test/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/eorchids/test/frappe-bench/apps/frappe 
+2023-01-13 10:30:05,682 DEBUG cd /home/eorchids/test/frappe-bench/apps/frappe && yarn install
+2023-01-13 10:31:41,664 DEBUG cd frappe-bench && bench build
+2023-01-13 10:31:42,241 INFO /usr/local/bin/bench build
+2023-01-13 10:33:08,135 LOG setting up backups
+2023-01-13 10:33:09,055 LOG backups were set up
+2023-01-13 10:33:09,096 INFO Bench frappe-bench initialized
+2023-01-13 10:33:41,622 INFO /usr/local/bin/bench new-site test1.com
+2023-01-13 10:36:15,972 INFO /usr/local/bin/bench get-app payments
+2023-01-13 10:36:19,240 LOG Getting payments
+2023-01-13 10:36:19,241 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2023-01-13 10:36:21,020 LOG Installing payments
+2023-01-13 10:36:21,021 DEBUG cd /home/eorchids/test/frappe-bench && /home/eorchids/test/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/eorchids/test/frappe-bench/apps/payments 
+2023-01-13 10:36:24,789 DEBUG bench build --app payments
+2023-01-13 10:36:25,153 INFO /usr/local/bin/bench build --app payments
+2023-01-13 10:36:44,799 INFO /usr/local/bin/bench get-app --branch version-13 erpnext
+2023-01-13 10:36:46,593 LOG Getting erpnext
+2023-01-13 10:36:46,594 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-13 --depth 1 --origin upstream
+2023-01-13 10:36:53,141 LOG Installing erpnext
+2023-01-13 10:36:53,141 DEBUG cd /home/eorchids/test/frappe-bench && /home/eorchids/test/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/eorchids/test/frappe-bench/apps/erpnext 
+2023-01-13 10:37:26,920 DEBUG cd /home/eorchids/test/frappe-bench/apps/erpnext && yarn install
+2023-01-13 10:37:32,792 DEBUG bench build --app erpnext
+2023-01-13 10:37:33,150 INFO /usr/local/bin/bench build --app erpnext
+2023-01-13 10:37:59,104 INFO /usr/local/bin/bench get-app hrms
+2023-01-13 10:38:00,911 LOG Getting hrms
+2023-01-13 10:38:00,911 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2023-01-13 10:38:03,598 LOG Installing hrms
+2023-01-13 10:38:03,599 DEBUG cd /home/eorchids/test/frappe-bench && /home/eorchids/test/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/eorchids/test/frappe-bench/apps/hrms 
+2023-01-13 10:38:07,934 DEBUG bench build --app hrms
+2023-01-13 10:38:08,295 INFO /usr/local/bin/bench build --app hrms
+2023-01-13 10:38:30,354 INFO /usr/local/bin/bench --site test1.com install-app erpnext
+2023-01-13 10:44:25,679 INFO /usr/local/bin/bench --site test1.com install-app hrms
+2023-01-13 10:45:01,460 INFO /usr/local/bin/bench --site test1.com install-app payments
+2023-01-13 10:45:23,749 INFO /usr/local/bin/bench use test1.com
+2023-01-13 10:45:33,436 INFO /usr/local/bin/bench start
+2023-01-13 10:45:36,253 INFO /usr/local/bin/bench serve --port 8000
+2023-01-13 10:45:36,413 INFO /usr/local/bin/bench watch
+2023-01-13 10:45:36,480 INFO /usr/local/bin/bench worker --queue short
+2023-01-13 10:45:36,577 INFO /usr/local/bin/bench schedule
+2023-01-13 10:45:36,599 INFO /usr/local/bin/bench worker --queue default
+2023-01-13 10:45:36,689 INFO /usr/local/bin/bench worker --queue long
+2023-01-13 11:41:11,611 INFO /usr/local/bin/bench new-app demo-app
+2023-01-13 11:41:17,370 LOG creating new app demo_app
+2023-01-13 11:41:48,475 LOG Installing demo_app
+2023-01-13 11:41:48,476 DEBUG cd /home/eorchids/test/frappe-bench && /home/eorchids/test/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/eorchids/test/frappe-bench/apps/demo_app 
+2023-01-13 11:41:52,249 DEBUG bench build --app demo_app
+2023-01-13 11:41:52,601 INFO /usr/local/bin/bench build --app demo_app
+2023-01-13 11:42:26,876 INFO /usr/local/bin/bench start
+2023-01-13 11:42:29,868 INFO /usr/local/bin/bench serve --port 8000
+2023-01-13 11:42:29,878 INFO /usr/local/bin/bench worker --queue default
+2023-01-13 11:42:29,982 INFO /usr/local/bin/bench worker --queue short
+2023-01-13 11:42:30,076 INFO /usr/local/bin/bench watch
+2023-01-13 11:42:30,072 INFO /usr/local/bin/bench worker --queue long
+2023-01-13 11:42:30,186 INFO /usr/local/bin/bench schedule
+2023-01-13 12:00:10,015 INFO /usr/local/bin/bench --verbose --site all backup
